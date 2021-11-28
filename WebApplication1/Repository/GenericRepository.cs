@@ -76,7 +76,6 @@ namespace WebApplication1.Repository
         public async Task InsertRange(IEnumerable<T> entitites)
         {
             await _db.AddRangeAsync(entitites);
-            ;
         }
 
         public void Update(T entity)
