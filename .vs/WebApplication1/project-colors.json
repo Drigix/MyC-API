@@ -5,7 +5,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "40ef79f6-5677-4397-a66c-bd06ec89d3d5": {
+      "ProjectGuid": "40ef79f6-5677-4397-a66c-bd06ec89d3d5",
+      "DisplayName": "WebApplication1",
+      "ColorIndex": 0
     }
   },
-  "NextColorIndex": 0
+  "NextColorIndex": 1
 }
