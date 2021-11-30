@@ -12,6 +12,7 @@ namespace WebApplication1.Configurations
             CreateMap<Country, CreateCountryDTO>().ReverseMap();
             CreateMap<Club, ClubDTO>().ReverseMap();
             CreateMap<Club, CreateClubDTO>().ReverseMap();
+            CreateMap<ApiUser,UserDTO>().ReverseMap();
         }
     }
 }

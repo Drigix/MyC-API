@@ -153,3 +153,8 @@ E:\Repos\MyC#-API\WebApplication1\obj\Debug\net5.0\WebApplication1.dll
 E:\Repos\MyC#-API\WebApplication1\obj\Debug\net5.0\ref\WebApplication1.dll
 E:\Repos\MyC#-API\WebApplication1\obj\Debug\net5.0\WebApplication1.pdb
 E:\Repos\MyC#-API\WebApplication1\obj\Debug\net5.0\WebApplication1.genruntimeconfig.cache
+D:\Users\michr\source\repos\CwiczeSeTakO-C#\ASP.NET\Nowy\WebApplication1\WebApplication1\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Users\michr\source\repos\CwiczeSeTakO-C#\ASP.NET\Nowy\WebApplication1\WebApplication1\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Users\michr\source\repos\CwiczeSeTakO-C#\ASP.NET\Nowy\WebApplication1\WebApplication1\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Users\michr\source\repos\CwiczeSeTakO-C#\ASP.NET\Nowy\WebApplication1\WebApplication1\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\Users\michr\source\repos\CwiczeSeTakO-C#\ASP.NET\Nowy\WebApplication1\WebApplication1\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll

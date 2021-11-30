@@ -1,0 +1,59 @@
+2021-11-29 16:45:23.338 +01:00[INF] User profile is available. Using 'C:\Users\michr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-29 16:45:24.202 +01:00[INF] Application started. Press Ctrl+C to shut down.
+2021-11-29 16:45:24.203 +01:00[INF] Hosting environment: Development
+2021-11-29 16:45:24.203 +01:00[INF] Content root path: D:\Users\michr\source\repos\CwiczeSeTakO-C#\ASP.NET\Nowy\WebApplication1\WebApplication1
+2021-11-29 16:45:24.263 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger - -
+2021-11-29 16:45:24.358 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/index.html - -
+2021-11-29 16:45:24.393 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger - - - 301 - - 131.4775ms
+2021-11-29 16:45:24.866 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/index.html - - - 200 - text/html;charset=utf-8 513.7327ms
+2021-11-29 16:45:24.900 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/swagger-ui-bundle.js - -
+2021-11-29 16:45:24.900 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - -
+2021-11-29 16:45:24.900 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/swagger-ui-standalone-preset.js - -
+2021-11-29 16:45:24.900 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/swagger-ui.css - -
+2021-11-29 16:45:24.904 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 3.8801ms
+2021-11-29 16:45:24.960 +01:00[INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-29 16:45:24.960 +01:00[INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-11-29 16:45:24.962 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/swagger-ui.css - - - 200 142933 text/css 61.6344ms
+2021-11-29 16:45:24.964 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 63.9582ms
+2021-11-29 16:45:24.986 +01:00[INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-11-29 16:45:25.000 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 100.2820ms
+2021-11-29 16:45:25.209 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/v1/swagger.json - -
+2021-11-29 16:45:25.310 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.2886ms
+2021-11-29 16:57:14.555 +01:00[INF] User profile is available. Using 'C:\Users\michr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-29 16:57:14.920 +01:00[INF] Application started. Press Ctrl+C to shut down.
+2021-11-29 16:57:14.921 +01:00[INF] Hosting environment: Development
+2021-11-29 16:57:14.922 +01:00[INF] Content root path: D:\Users\michr\source\repos\CwiczeSeTakO-C#\ASP.NET\Nowy\WebApplication1\WebApplication1
+2021-11-29 16:57:15.035 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger - -
+2021-11-29 16:57:15.145 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/index.html - -
+2021-11-29 16:57:15.157 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger - - - 301 - - 124.3737ms
+2021-11-29 16:57:15.439 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/index.html - - - 200 - text/html;charset=utf-8 293.1384ms
+2021-11-29 16:57:15.499 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/swagger-ui-standalone-preset.js - -
+2021-11-29 16:57:15.499 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/swagger-ui-bundle.js - -
+2021-11-29 16:57:15.499 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/swagger-ui.css - -
+2021-11-29 16:57:15.532 +01:00[INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-11-29 16:57:15.532 +01:00[INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-11-29 16:57:15.532 +01:00[INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-29 16:57:15.535 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/swagger-ui.css - - - 200 142933 text/css 35.5274ms
+2021-11-29 16:57:15.540 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 40.7910ms
+2021-11-29 16:57:15.546 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 46.9833ms
+2021-11-29 16:57:15.547 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - -
+2021-11-29 16:57:15.551 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - - - 200 11949 application/javascript;+charset=utf-8 2.3713ms
+2021-11-29 16:57:15.895 +01:00[INF] Request starting HTTP/2 GET https://localhost:44337/swagger/v1/swagger.json - -
+2021-11-29 16:57:15.975 +01:00[INF] Request finished HTTP/2 GET https://localhost:44337/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.9973ms
+2021-11-29 16:57:37.263 +01:00[INF] Request starting HTTP/2 POST https://localhost:44337/api/Account/register application/json-patch+json 114
+2021-11-29 16:57:37.272 +01:00[INF] CORS policy execution successful.
+2021-11-29 16:57:37.341 +01:00[INF] Executing endpoint 'WebApplication1.Controllers.AccountController.Register (WebApplication1)'
+2021-11-29 16:57:37.393 +01:00[INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(WebApplication1.Models.UserDTO) on controller WebApplication1.Controllers.AccountController (WebApplication1).
+2021-11-29 16:57:38.444 +01:00[INF] Executing action method WebApplication1.Controllers.AccountController.Register (WebApplication1) - Validation state: "Valid"
+2021-11-29 16:57:38.459 +01:00[INF] Registration Attempt for user@example.com
+2021-11-29 16:57:39.328 +01:00[INF] Entity Framework Core 5.0.1 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-11-29 16:57:41.953 +01:00[INF] Executed DbCommand (69ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-11-29 16:57:41.980 +01:00[WRN] User validation failed: InvalidUserName.
+2021-11-29 16:57:41.988 +01:00[INF] Executed action method WebApplication1.Controllers.AccountController.Register (WebApplication1), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 3539.1824ms.
+2021-11-29 16:57:41.995 +01:00[INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2021-11-29 16:57:42.044 +01:00[INF] Executed action WebApplication1.Controllers.AccountController.Register (WebApplication1) in 4645.349ms
+2021-11-29 16:57:42.045 +01:00[INF] Executed endpoint 'WebApplication1.Controllers.AccountController.Register (WebApplication1)'
+2021-11-29 16:57:42.049 +01:00[INF] Request finished HTTP/2 POST https://localhost:44337/api/Account/register application/json-patch+json 114 - 400 83 application/json;+charset=utf-8 4785.8964ms
