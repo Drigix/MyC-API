@@ -1,0 +1,86 @@
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
+using WebApplication1.Data;
+using WebApplication1.Models;
+
+namespace WebApplication1.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AccountController : ControllerBase
+    {
+        private readonly UserManager<ApiUser> _userManager;
+        private readonly ILogger<AccountController> _logger;
+        private readonly IMapper _mapper;
+
+        public AccountController(UserManager<ApiUser> userManager, ILogger<AccountController> logger, IMapper mapper)
+        {
+            _userManager = userManager;
+            _logger = logger;
+            _mapper = mapper;
+        }
+
+        [HttpPost]
+        [Route("register")]
+        public async Task<IActionResult> Register([FromBody]UserDTO userDTO)
+        {
+            _logger.LogInformation($"Registration Attempt for {userDTO.Email}");
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                var user= _mapper.Map<ApiUser>(userDTO);
+                user.UserName = userDTO.Email;
+                var results = await _userManager.CreateAsync(user,userDTO.Password);
+                if (!results.Succeeded)
+                {
+                    foreach(var error in results.Errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                    }
+                    return BadRequest(ModelState);
+                }
+
+                return Accepted();
+            }
+            catch (System.Exception ex)
+            {
+                _logger.LogError(ex, $"Something went wrong in the {nameof(Register)}");
+                return Problem ($"Something went wrong in the {nameof(Register)}", statusCode: 500);
+            }
+        }
+
+
+        ////[HttpPost]
+        ////[Route("login")]
+        ////public async Task<IActionResult> Login([FromBody] UserDTO userDTO)
+        //{
+        //    _logger.LogInformation($"Login Attempt for {userDTO.Email}");
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+        //    try
+        //    {
+        //        var result = await _signInManager.PasswordSignInAsync(userDTO.Email, userDTO.Password, false, false);
+        //        if(!result.Succeeded)
+        //        {
+        //            return Unauthorized(userDTO);
+        //        }
+
+        //        return Accepted();
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        _logger.LogError(ex, $"Something went wrong in the {nameof(Login)}");
+        //        return Problem($"Something went wrong in the {nameof(Login)}", statusCode: 500);
+        //    }
+        //}
+    }
+}
