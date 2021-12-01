@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models
 {
@@ -18,5 +19,7 @@ namespace WebApplication1.Models
         [Required]
         [StringLength(15, ErrorMessage = "Your Password is limited")]
         public string Password { get; set; }
+
+        public ICollection<string> Roles { get; set; }
     }
 }

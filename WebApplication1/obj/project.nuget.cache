@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JE7WgiPaw5L5ecEEHBG/fh9WSeTc3/0fGsm+Vf2C5PuRlR5sH+wAcRyYi4T1rUtnVK/LjjpHIPg7mxP7VIrCwA==",
+  "dgSpecHash": "9bHtstiKl4U2hUCGdN7lP2mDtt7RuVvHCu4XaU955kKTnikdtX35Nur5d2CzBA9oI2Cjl4TqfOE4gYsn79ND4g==",
   "success": true,
-  "projectFilePath": "D:\\Users\\michr\\source\\repos\\CwiczeSeTakO-C#\\ASP.NET\\Nowy\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "E:\\Repos\\MyC#-API\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\michr\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\michr\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
@@ -135,7 +135,11 @@
     "C:\\Users\\michr\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\michr\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\michr\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\michr\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\michr\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\michr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\michr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\michr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\michr\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

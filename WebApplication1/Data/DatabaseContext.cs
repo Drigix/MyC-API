@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication1.Configurations.Entities;
 
 namespace WebApplication1.Data
 {
@@ -19,52 +20,9 @@ namespace WebApplication1.Data
         {
             base.OnModelCreating(builder);
 
-            builder.Entity<Country>().HasData(
-                new Country
-                {
-                    Id = 1,
-                    Name = "Poland",
-                    ShortName = "Pl"
-                },
-                new Country()
-                {
-                    Id = 2,
-                    Name = "Germany",
-                    ShortName = "Ger"
-                },
-                new Country()
-                {
-                    Id = 3,
-                    Name = "England",
-                    ShortName = "En"
-                }
-                );
-            builder.Entity<Club>().HasData(
-               new Club
-               {
-                   Id = 1,
-                   Name = "FC Barcelona",
-                   Ligue = "LaLiga",
-                   CountryId = 1,
-                   Rating = 6.6
-               },
-               new Club()
-               {
-                   Id = 2,
-                   Name = "Manchester United",
-                   Ligue = "Premier League",
-                   CountryId = 2,
-                   Rating = 5.5
-               },
-               new Club()
-               {
-                   Id = 3,
-                   Name = "Bayern Monachium",
-                   Ligue = "Bundesliga",
-                   CountryId = 2,
-                   Rating = 8.7
-               }
-               );
+            builder.ApplyConfiguration(new CountryConfiguration());
+            builder.ApplyConfiguration(new ClubConfiguration());
+            builder.ApplyConfiguration(new RoleConfiguration());
         }
     }
 }

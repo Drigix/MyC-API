@@ -47,6 +47,7 @@ namespace WebApplication1.Controllers
                     return BadRequest(ModelState);
                 }
 
+                await _userManager.AddToRolesAsync(user, userDTO.Roles);
                 return Accepted();
             }
             catch (System.Exception ex)
