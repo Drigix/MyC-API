@@ -39,6 +39,8 @@ namespace WebApplication1
 
             services.ConfigureIdentity();
 
+            services.ConfigureJWT(Configuration);
+
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
