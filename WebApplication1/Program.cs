@@ -21,7 +21,7 @@ namespace WebApplication1
                 restrictedToMinimumLevel:   Serilog.Events.LogEventLevel.Information
                 ).CreateLogger();   
             CreateHostBuilder(args).Build().Run();
-
+            
             try
             {
                 Log.Information("Application Is starting");

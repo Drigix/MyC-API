@@ -3,15 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models
 {
-    public class UserDTO
+    public class LoginUserDTO
     {
-        public string FirstName { get; set; }
-
-        public string LastName { get; set; }
-
-        [DataType(DataType.PhoneNumber)]
-        public string PhoneNumber { get; set; }
-
         [Required]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
@@ -19,6 +12,16 @@ namespace WebApplication1.Models
         [Required]
         [StringLength(15, ErrorMessage = "Your Password is limited")]
         public string Password { get; set; }
+    }
+
+    public class UserDTO: LoginUserDTO
+    {
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        [DataType(DataType.PhoneNumber)]
+        public string PhoneNumber { get; set; }
 
         public ICollection<string> Roles { get; set; }
     }

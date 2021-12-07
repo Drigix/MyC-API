@@ -17,6 +17,7 @@ using WebApplication1.Configurations;
 using WebApplication1.Data;
 using WebApplication1.IRepository;
 using WebApplication1.Repository;
+using WebApplication1.Services;
 
 namespace WebApplication1
 {
@@ -51,6 +52,7 @@ namespace WebApplication1
             services.AddAutoMapper(typeof(MapperInitializer));
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IAuthManager, AuthManager>();
 
             services.AddSwaggerGen(c =>
             {

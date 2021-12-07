@@ -1,16 +1,18 @@
 ﻿
 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using System;
+using System.Text;
 using WebApplication1.Data;
 
 namespace WebApplication1
 {
     public static class ServiceExtensions
     {
-        public static object Enviroment { get; private set; }
 
         public static void ConfigureIdentity(this IServiceCollection services)
         {
@@ -21,7 +23,7 @@ namespace WebApplication1
             builder.AddEntityFrameworkStores<DatabaseContext>().AddDefaultTokenProviders();
         }
 
-        public static void ConfigureJWT(this IServiceCollecion services, IConfiguration Configuration)
+        public static void ConfigureJWT(this IServiceCollection services, IConfiguration Configuration)
         {
             var jwtSettings = Configuration.GetSection("Jwt");
             var key = Environment.GetEnvironmentVariable("KEY");
@@ -29,18 +31,18 @@ namespace WebApplication1
             services.AddAuthentication(o =>
             {
                 o.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                o.DefaultChellengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                o.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }
             )
             .AddJwtBearer(o =>
                 {
-                    o.TokenValidationParamters = new TokenValidationParameters
+                    o.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuer = true,
                         ValidateLifetime = true,
-                        ValidationIssuerSigningKey = true,
+                        ValidateIssuerSigningKey = true,
                         ValidIssuer = jwtSettings.GetSection("Issuer").Value,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.GetSection())),
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("key")),
                     };
                 });
         }
