@@ -1,4 +1,4 @@
-﻿
+﻿    
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -26,7 +26,7 @@ namespace WebApplication1
         public static void ConfigureJWT(this IServiceCollection services, IConfiguration Configuration)
         {
             var jwtSettings = Configuration.GetSection("Jwt");
-            var key = Environment.GetEnvironmentVariable("KEY");
+            var key = jwtSettings.GetSection("Key").Value;
 
             services.AddAuthentication(o =>
             {

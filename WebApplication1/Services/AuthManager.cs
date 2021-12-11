@@ -28,7 +28,7 @@ namespace WebApplication1.Services
 
         public async Task<string> CreateToken()
         {
-            var signingCredentials = getSigningCredentials();
+            var signingCredentials = GetSigningCredentials();
             var claims = await GetClaims();
             var token = GenerateTokenOptions(signingCredentials, claims);
 
@@ -66,9 +66,10 @@ namespace WebApplication1.Services
             return claims;
         }
 
-        private SigningCredentials getSigningCredentials()
+        private SigningCredentials GetSigningCredentials()
         {
-            var key = Environment.GetEnvironmentVariable("key");
+            var jwtSettings = _configuration.GetSection("Jwt");
+            var key = jwtSettings.GetSection("Key").Value;
             var secret = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
 
             return new SigningCredentials(secret, SecurityAlgorithms.HmacSha256);
@@ -76,7 +77,7 @@ namespace WebApplication1.Services
         
         public async Task<bool> ValidateUser(LoginUserDTO userDTO)
         {
-            _user = await _userManager.FindByNameAsync(userDTO.Email);
+             _user = await _userManager.FindByNameAsync(userDTO.Email);
             return(_user!=null && await _userManager.CheckPasswordAsync(_user,userDTO.Password));
         }
     }

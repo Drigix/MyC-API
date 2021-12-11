@@ -78,7 +78,7 @@ namespace WebApplication1.Controllers
                     return Unauthorized();
                 }
 
-                return Accepted(new { Token = await _authManager.CreateToken() });
+                return Accepted(new { Token = await _authManager.CreateToken() });  
             }
             catch (System.Exception ex)
             {
